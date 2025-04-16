@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  color: #202027;
+  background-color: #202027;
+}
+a {
+  text-decoration: none;
+  color: #202027;
+}
+.center {
+  padding-left: calc(50% - 600px);
+  padding-right: calc(50% - 600px);
+}
+.top {
+  height: 800px;
+  background-image: url("img/top-background.png");
+  padding-top: 196px;
+  padding-left: 120px;
+
+  &__wrapper {
+    width: 769px;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+  }
+
+  &__title {
+    font-size: 64px;
+    font-weight: 700;
+  }
+  &__text {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  &__bold-text {
+    font-weight: 600;
+  }
+  &__button {
+    display: flex;
+    width: 247px;
+    height: 66px;
+    border-radius: 60px;
+    background-color: #202027;
+    color: #ffffff;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #202027;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      background-color: #ffffff;
+      color: #202027;
+
+    }
+  }
+}
+.about-games {
+  &__game-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+  }
+  &__link {
+    height: 100%;
+  }
+}
+.link {
+  &_first {
+    height: 473px;
+  }
+  &_second {
+    height: 512px;
+  }
+  &_third {
+    height: 473px;
+  }
+  &_fourth {
+    margin-top: -40px;
+    height: 551px;
+  }
+  &_fifth {
+    margin-top: -10px;
+    height: 551px;
+  }
+  &_sixth {
+    margin-top: -40px;
+    height: 550px;
+  }
+}
+
+.game-card {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  border-radius: 30px;
+    width: 378px ;
+    height: 100%;
+  &__text {
+    width: fit-content;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: #f7f7f7;
+    border-radius: 53px;
+    padding: 10px 16px;
+
+    &-wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      padding: 32px;
+    }
+  }
+
+  &__title {
+    font-size: 32px;
+    font-weight: 700;
+  }
+}
