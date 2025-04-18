@@ -23,14 +23,15 @@ a {
 .top {
   height: 800px;
   background-image: url("img/top-background.png");
-  padding-top: 196px;
-  padding-left: 120px;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .top__wrapper {
-  width: 769px;
+  padding-top: 196px;
   display: flex;
   flex-direction: column;
   gap: 48px;
+  width: 769px;
 }
 .top__title {
   font-size: 64px;
@@ -54,6 +55,8 @@ a {
   justify-content: center;
   border: 1px solid #202027;
   transition: all 0.3s ease-in-out;
+  font-size: 24px;
+  font-weight: 600;
 }
 .top__button:hover {
   background-color: #ffffff;
@@ -79,16 +82,15 @@ a {
   height: 473px;
 }
 .link_fourth {
-  margin-top: -40px;
+  margin-top: -39px;
   height: 551px;
 }
 .link_fifth {
-  margin-top: -10px;
-  height: 551px;
+  height: 512px;
 }
 .link_sixth {
-  margin-top: -40px;
-  height: 550px;
+  margin-top: -39px;
+  height: 551px;
 }
 
 .game-card {
@@ -113,8 +115,11 @@ a {
   flex-direction: column;
   gap: 16px;
   padding: 32px;
+  height: 100%;
+  justify-content: space-between;
 }
 .game-card__title {
   font-size: 32px;
   font-weight: 700;
+  width: 96%;
 }/*# sourceMappingURL=style.css.map */
