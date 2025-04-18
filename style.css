@@ -63,6 +63,21 @@ a {
   color: #202027;
 }
 
+.about-games {
+  padding-top: 94px;
+}
+.about-games__title {
+  font-size: 64px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 24px;
+}
+.about-games__text {
+  font-size: 24px;
+  color: #ffffff;
+  margin-bottom: 72px;
+  width: 60%;
+}
 .about-games__game-box {
   display: flex;
   flex-wrap: wrap;
@@ -122,4 +137,37 @@ a {
   font-size: 32px;
   font-weight: 700;
   width: 96%;
+}
+
+@media (max-width: 1024px) {
+  .top {
+    background-image: url("/img/mobile-top-background.png");
+    height: 700px;
+  }
+  .top__wrapper {
+    width: auto;
+    align-items: center;
+    padding-left: 29px;
+    padding-right: 29px;
+  }
+  .top__title {
+    font-size: 40px;
+    text-align: center;
+  }
+  .top__text {
+    font-size: 16px;
+    text-align: center;
+  }
+  .top__button {
+    width: 285px;
+    height: 55px;
+    font-size: 16px;
+  }
+  .center {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .about-games {
+    display: none;
+  }
 }/*# sourceMappingURL=style.css.map */

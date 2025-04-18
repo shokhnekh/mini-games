@@ -64,6 +64,21 @@ a {
   }
 }
 .about-games {
+  padding-top: 94px;
+
+
+  &__title {
+    font-size: 64px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 24px;
+  }
+  &__text {
+    font-size: 24px;
+    color: #ffffff;
+    margin-bottom: 72px;
+    width: 60%;
+  }
   &__game-box {
     display: flex;
     flex-wrap: wrap;
@@ -129,3 +144,4 @@ a {
     width: 96%;
   }
 }
+@import "mobile.scss"
