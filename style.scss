@@ -20,14 +20,16 @@ a {
 .top {
   height: 800px;
   background-image: url("img/top-background.png");
-  padding-top: 196px;
-  padding-left: 120px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
 
   &__wrapper {
-    width: 769px;
+    padding-top: 196px;
     display: flex;
     flex-direction: column;
     gap: 48px;
+    width: 769px;
   }
 
   &__title {
@@ -52,15 +54,31 @@ a {
     justify-content: center;
     border: 1px solid #202027;
     transition: all 0.3s ease-in-out;
+    font-size: 24px;
+    font-weight:600;
 
     &:hover {
       background-color: #ffffff;
       color: #202027;
-
     }
   }
 }
 .about-games {
+  padding-top: 94px;
+
+
+  &__title {
+    font-size: 64px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 24px;
+  }
+  &__text {
+    font-size: 24px;
+    color: #ffffff;
+    margin-bottom: 72px;
+    width: 60%;
+  }
   &__game-box {
     display: flex;
     flex-wrap: wrap;
@@ -81,16 +99,16 @@ a {
     height: 473px;
   }
   &_fourth {
-    margin-top: -40px;
+    margin-top: -39px;
     height: 551px;
   }
   &_fifth {
-    margin-top: -10px;
-    height: 551px;
+    // margin-top: -10px;
+    height: 512px;
   }
   &_sixth {
-    margin-top: -40px;
-    height: 550px;
+    margin-top: -39px;
+    height: 551px;
   }
 }
 
@@ -99,8 +117,8 @@ a {
   flex-direction: column;
   background-color: #ffffff;
   border-radius: 30px;
-    width: 378px ;
-    height: 100%;
+  width: 378px;
+  height: 100%;
   &__text {
     width: fit-content;
     font-size: 16px;
@@ -114,11 +132,16 @@ a {
       flex-direction: column;
       gap: 16px;
       padding: 32px;
+      height: 100%;
+      justify-content: space-between;
+      
     }
   }
 
   &__title {
     font-size: 32px;
     font-weight: 700;
+    width: 96%;
   }
 }
+@import "mobile.scss"

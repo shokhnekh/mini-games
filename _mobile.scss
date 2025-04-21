@@ -1,0 +1,39 @@
+@media (max-width: 1024px){
+    .top {
+        background-image: url("/img/mobile-top-background.png");
+        height: 700px;
+
+                &__wrapper {
+            width: auto;
+            align-items: center;
+            padding-left: 29px;
+            padding-right: 29px;
+        }
+
+        &__title {
+            font-size: 40px;
+            text-align: center;
+
+        }
+        &__text {
+            font-size: 16px;
+            text-align: center;
+        }
+        &__button {
+            width: 285px;
+            height: 55px;
+            font-size: 16px;
+        }
+        
+    }
+    .center {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .about-games {
+        display: none;
+    }
+
+
+}
